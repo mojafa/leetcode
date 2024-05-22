@@ -16,7 +16,6 @@ func main() {
 }
 
 // merge merges two sorted arrays nums1 and nums2 into nums1 in-place.
-
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	// i points to the last element in the initial segment of nums1
 	i := m - 1
@@ -58,3 +57,15 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		fmt.Println(nums1)
 	}
 }
+
+/**
+The time complexity of the merge function is 𝑂(𝑚+𝑛)
+This is because we process each element of nums1 and nums2 exactly once.
+We iterate through both arrays in a single pass, comparing and placing elements in the correct position.
+**/
+
+/**
+The space complexity of the merge function is 𝑂(1).
+This is because we do not use any extra space that scales with the input size.
+We only use a fixed amount of additional space for the pointers i, j, and k.
+**/
